@@ -5,14 +5,6 @@
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$parent_path"
 
-docker pull opensuse/tumbleweed
-docker pull fedora
-docker pull ubuntu
-docker pull alpine
-docker pull centos
-docker pull debian
-docker pull almalinux
-
 docker build -t tumblefetch -f Dockerfiles/DockerfileTumbleweed .
 docker build -t fedorafetch -f Dockerfiles/DockerfileFedora .
 docker build -t ubuntuuufetch -f Dockerfiles/DockerfileUbuntu .
