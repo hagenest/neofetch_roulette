@@ -1,0 +1,5 @@
+FROM opensuse/tumbleweed
+
+RUN zypper -n in neofetch
+
+CMD neofetch

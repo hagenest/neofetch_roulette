@@ -1,0 +1,6 @@
+FROM almalinux
+
+RUN yum -y install epel-release
+RUN yum -y install neofetch
+
+CMD neofetch
